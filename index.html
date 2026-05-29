@@ -3,198 +3,193 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Portfolio | Tristan Asis</title>
   <link rel="stylesheet" href="port.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <script src="index.js"></script>
-  <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "EFHxysK6d2MYYm82E",
-      });
-   })();
-</script>
+  <script src="index.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function(){ emailjs.init({ publicKey: "EFHxysK6d2MYYm82E" }); })();
+  </script>
 </head>
 <body>
 
 <header class="header">
-    <a href="#home" class="logo">Tristan <span>Asis</span></a>
-
-
-<nav class="navbar">
-    <a href="#home" class="active">Home</a>
+  <a href="index.html" class="logo">Tristan <span>Asis</span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="active">Home</a>
     <a href="#education">Education</a>
     <div class="dropdown">
-      <a href="#home">Projects ▾</a>
+      <a href="#" class="drop-trigger">Projects ▾</a>
       <div class="dropdown-menu">
-    <a href="websites.html">WEB</a>
-    <a href="Logos.html">LOGOS</a>
+        <a href="websites.html">WEB</a>
+        <a href="Logos.html">LOGOS</a>
+      </div>
     </div>
+    <div class="dropdown">
+      <a href="#" class="drop-trigger">Subjects ▾</a>
+      <div class="dropdown-menu">
+        <a href="as101.html">AS101</a>
+        <a href="as102.html">AS102</a>
+      </div>
     </div>
-
-  <div class="dropdown">
-    <a href="#home">Subjects ▾</a>
-  <div class="dropdown-menu">
-    <a href="as101.html">AS101</a>
-    <a href="as102.html">AS102</a>
-  </div>
-  </div>
     <a href="certificates.html">Certificates</a>
     <a href="#contact">Contact</a>
-
-</nav>
+  </nav>
 </header>
 
 <section class="home" id="home">
   <div class="home-img">
-    <img src="pf.png" alt="">
+    <img src="pf.png" alt="Tristan Asis">
   </div>
-
-  <div  class="home-content">
-    <h1> Hi, I'm <span>Tristan</span></h1>
+  <div class="home-content">
+    <h1>Hi, I'm <span>Tristan</span></h1>
     <h3 class="text-animation">I'm a <span></span></h3>
     <p>Passionate about learning new skills and expanding my knowledge in the field of technology. My goal is to continuously improve my abilities, stay updated with modern tools and technologies, and apply what I learn to create meaningful solutions while contributing to the growth and success of the organization.</p>
-  <div class="social-icons">
-    <a href="https://www.linkedin.com/in/tristan-joseph-asis-930199361/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-    <a href="https://github.com/ZenDeV0810" target="_blank"><i class='bx bxl-github'></i></a>
-    <a href="https://www.instagram.com/twistanjeyozefu/" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
-    <a href="https://www.facebook.com/zenzenzen8" target="_blank"><i class='bx bxl-facebook-circle'></i></i></a>
-  </div>
-  <div class="btn-group">
-    <a href="#contact" class="btn">Hire</a>
-    <a href="#contact" class="btn">Contact</a>
-    <a href="Tristan_Resume.pdf" target="_blank" class="resume">Download CV</a>
-  </div>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/tristan-joseph-asis-930199361/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+      <a href="https://github.com/ZenDeV0810" target="_blank"><i class='bx bxl-github'></i></a>
+      <a href="https://www.instagram.com/twistanjeyozefu/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+      <a href="https://www.facebook.com/zenzenzen8" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+    </div>
+    <div class="btn-group">
+      <a href="#contact" class="btn">Hire</a>
+      <a href="#contact" class="btn">Contact</a>
+      <a href="Tristan_Resume.pdf" target="_blank" class="resume">Download CV</a>
+    </div>
   </div>
 </section>
 
 <section class="education" id="education">
-    <h2 class="heading">Education</h2>
-    
+  <h2 class="heading">Education</h2>
   <div class="timeline-items">
-  
-  <div class="timeline-item">
-  <div class="timeline-dot"></div>
-  <div class="timeline-date">2021-2023</div>
-  <div class="timeline-content">
-    <h3>SENIOR HIGHSCHOOL</h3>
-    <p>Southern Luzon College - Dasmarinas, Cavite</p>
-    <p>Strand: STEM</p>
-    <p>With High Honor - Grade 11</p>
-    <p>With Honor - Grade 12</p>
-  </div>
-  </div>
-
-  <div class="timeline-item">
-  <div class="timeline-dot"></div>
-  <div class="timeline-date">2023-2025</div>
-  <div class="timeline-content">
-    <h3>COLLEGE</h3>
-    <p>STI COLLEGE - Dasmarinas, Cavite</p>
-    <p>Course: BS in Information Technology</p>
-  </div>
-  </div>
-
-  <div class="timeline-item">
-  <div class="timeline-dot"></div>
-  <div class="timeline-date">2025-present</div>
-  <div class="timeline-content">
-    <h3>COLLEGE</h3>
-    <p>MABINI COLLEGE Inc. - Daet, Cam.Norte</p>
-    <p>Course: BS in Computer Science</p>
-  </div>
-  </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2021-2023</div>
+      <div class="timeline-content">
+        <h3>SENIOR HIGHSCHOOL</h3>
+        <p>Southern Luzon College - Dasmarinas, Cavite</p>
+        <p>Strand: STEM</p>
+        <p>With High Honor - Grade 11</p>
+        <p>With Honor - Grade 12</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2023-2025</div>
+      <div class="timeline-content">
+        <h3>COLLEGE</h3>
+        <p>STI COLLEGE - Dasmarinas, Cavite</p>
+        <p>Course: BS in Information Technology</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2025-present</div>
+      <div class="timeline-content">
+        <h3>COLLEGE</h3>
+        <p>MABINI COLLEGE Inc. - Daet, Cam.Norte</p>
+        <p>Course: BS in Computer Science</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="services" id="services">
-    <h2 class="heading">Services</h2>
-      
-      
+  <h2 class="heading">Services</h2>
   <div class="services-container">
-  <div class="services-box">
-  <div class="services-info">
-    <h4>Software Development</h4>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ipsa veniam, odio odit, magni quia architecto ipsam possimus libero id voluptas eum assumenda perspiciatis ipsum eos quasi quaerat excepturi omnis.</p>
-  </div>
-  </div>
-  <div class="services-box">
-  <div class="services-info">
-    <h4>Frontend Development</h4>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ipsa veniam, odio odit, magni quia architecto ipsam possimus libero id voluptas eum assumenda perspiciatis ipsum eos quasi quaerat excepturi omnis.</p>
-  </div>
-  </div>
-
-  <div class="services-box">
-  <div class="services-info">
-    <h4>Backend Development</h4>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ipsa veniam, odio odit, magni quia architecto ipsam possimus libero id voluptas eum assumenda perspiciatis ipsum eos quasi quaerat excepturi omnis.</p>
-  </div>
-  </div>
-
-  <div class="services-box">
-  <div class="services-info">
-    <h4>Testing</h4>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ipsa veniam, odio odit, magni quia architecto ipsam possimus libero id voluptas eum assumenda perspiciatis ipsum eos quasi quaerat excepturi omnis.</p>
-  </div>
-  </div>
+    <div class="services-box"><div class="services-info">
+      <h4>Software Development</h4>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ipsa veniam, odio odit, magni quia architecto ipsam possimus libero id voluptas eum assumenda perspiciatis ipsum eos quasi quaerat excepturi omnis.</p>
+    </div></div>
+    <div class="services-box"><div class="services-info">
+      <h4>Frontend Development</h4>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ipsa veniam, odio odit, magni quia architecto ipsam possimus libero id voluptas eum assumenda perspiciatis ipsum eos quasi quaerat excepturi omnis.</p>
+    </div></div>
+    <div class="services-box"><div class="services-info">
+      <h4>Backend Development</h4>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ipsa veniam, odio odit, magni quia architecto ipsam possimus libero id voluptas eum assumenda perspiciatis ipsum eos quasi quaerat excepturi omnis.</p>
+    </div></div>
+    <div class="services-box"><div class="services-info">
+      <h4>Testing</h4>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ipsa veniam, odio odit, magni quia architecto ipsam possimus libero id voluptas eum assumenda perspiciatis ipsum eos quasi quaerat excepturi omnis.</p>
+    </div></div>
   </div>
 </section>
 
 <section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me</span></h2>
+  <h2 class="heading">Contact <span>Me</span></h2>
   <form onsubmit="sendMail(event)">
-  <div class="input-group">
-  <div class="input-box">
-    <input type="text" id="name" placeholder="Full Name">
-    <input type="email" id="emailacc" placeholder="Email">
-  </div>
-  <div class="input-box">
-    <input type="tel" id="phonenum" placeholder="Phone Number">
-    <input type="text" id="subject" placeholder="Subject" autocomplete="off">
-  </div>
-  </div>
-  <div class="input-group-2">
-    <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" autocomplete="off"></textarea>
-    <input type="submit" value="Send Message" class="btn">
-  </div>
+    <div class="input-group">
+      <div class="input-box">
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="email" id="emailacc" placeholder="Email">
+      </div>
+      <div class="input-box">
+        <input type="tel" id="phonenum" placeholder="Phone Number">
+        <input type="text" id="subject" placeholder="Subject" autocomplete="off">
+      </div>
+    </div>
+    <div class="input-group-2">
+      <textarea id="message" cols="30" rows="10" placeholder="Your Message" autocomplete="off"></textarea>
+      <input type="submit" value="Send Message" class="btn">
+    </div>
   </form>
-</section> 
-    
+</section>
+
 <footer class="footer">
   <div class="social">
     <a href="https://www.linkedin.com/in/tristan-joseph-asis-930199361/" target="_blank"><i class='bx bxl-linkedin'></i></a>
     <a href="https://github.com/ZenDeV0810" target="_blank"><i class='bx bxl-github'></i></a>
-    <a href="https://www.instagram.com/twistanjeyozefu/" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
-    <a href="https://www.facebook.com/zenzenzen8" target="_blank"><i class='bx bxl-facebook-circle'></i></i></a>
+    <a href="https://www.instagram.com/twistanjeyozefu/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+    <a href="https://www.facebook.com/zenzenzen8" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
   </div>
   <ul class="list">
-    <li>
-    <a href="#">FAQ</a>
-    </li>
-    <li>
-    <a href="#services">Services</a>
-    </li>
-    <li>
-    <a href="#home">About Me</a>
-    </li>
-    <li>
-    <a href="#contact">Contact</a>
-    </li>
-        
-    </ul>
-    <p class="copyright">
-     © Tristan Asis | All Rights Reserved
-    </p>
-
+    <li><a href="#">FAQ</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="index.html">About Me</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <p class="copyright">© Tristan Asis | All Rights Reserved</p>
 </footer>
 
-
-  <script src="script.js"></script>
-</section>
-  
+<script src="script.js"></script>
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const navbar     = document.getElementById("navbar");
+  menuToggle.addEventListener("click", function(e){
+    e.stopPropagation();
+    this.classList.toggle("active");
+    navbar.classList.toggle("open");
+  });
+  navbar.querySelectorAll("a:not(.drop-trigger)").forEach(link => {
+    link.addEventListener("click", () => {
+      menuToggle.classList.remove("active");
+      navbar.classList.remove("open");
+      document.querySelectorAll(".dropdown").forEach(d => d.classList.remove("open"));
+    });
+  });
+  document.addEventListener("click", function(e){
+    if(!navbar.contains(e.target) && !menuToggle.contains(e.target)){
+      menuToggle.classList.remove("active");
+      navbar.classList.remove("open");
+      document.querySelectorAll(".dropdown").forEach(d => d.classList.remove("open"));
+    }
+  });
+  document.querySelectorAll(".drop-trigger").forEach(trigger => {
+    trigger.addEventListener("click", function(e){
+      if(window.innerWidth <= 768){
+        e.preventDefault();
+        const parent = this.closest(".dropdown");
+        const isOpen = parent.classList.contains("open");
+        document.querySelectorAll(".dropdown").forEach(d => d.classList.remove("open"));
+        if(!isOpen) parent.classList.add("open");
+      }
+    });
+  });
+</script>
 </body>
 </html>
